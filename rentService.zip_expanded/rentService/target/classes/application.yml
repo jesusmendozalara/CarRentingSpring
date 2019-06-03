@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rentservice?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driverclassname: com.mysql.cj.jdbc.Driver 
+  jpa:
+    database: mysql
+    show-sql: true
+    format-sql: true
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.MariaDB53Dialect             
